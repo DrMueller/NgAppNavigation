@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li *ngFor="let navEntry of navigationEntries" class="nav" routerLinkActive="active">
+          <a routerLink="{{navEntry.routerLinkTarget}}">
+            <h3>
+              {{navEntry.heading}}
+            </h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
